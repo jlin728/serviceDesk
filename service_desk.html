@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>Service Desk Intake Form</title>
+</head>
+<body>
+    <form action="thankyou.html" method="POST">
+    <fieldset style="width: 700px">
+    <legend>Data Governance Implementation Team (DGIT) Request Intake</legend>
+    
+    <br>
+    <br>
+
+    <img src="img/summ.png" alt="comment bubble icon" class="icon"><b>Summary <i>(required)</b> (Please enter a short descriptive title for the request)</i><br>
+    <input type = "text" name="summary" size="40" required/>
+    <br><br>
+
+    <div id="requestor-info")></div>
+    <img src="img/ICN-2.png" alt="person icon" class="icon"><b>Requestor Name <i>(required)</i></b> <br>
+    <input type = "text" name="requestor-name" size="40" required/>
+    <br><br>
+
+    <img src="img/clock.png" alt="clock icon" class="icon"><b>Need By Date</b>&nbsp;<i>(Actual completion date may vary depending on complexity of request)</i><br>
+    <input type = "date" name="requestor-name" size="40"/>
+    <br><br>
+
+    </div>
+
+    <b>Business Unit:</b>&emsp;
+    <select class="dropdown">
+        <option value="" disabled selected>Select</option>
+        <option value="bcr"> Business Continuity and Resiliency </option>
+        <option value="comp"> Compliance </option>
+        <option value="erm"> Enterprise Risk Management </option>
+        <option value="frm"> Finance Risk Management </option>
+        <option value="fcrm"> Financial Crimes Risk Management </option>
+        <option value="orm"> Operational Risk Management </option>
+        <option value="isrm"> Information Security Risk Management </option>
+        <option value="das"> Data Analytics Services </option>
+        <option value="edart"> Enterprise Data Analytics and Reporting Technology </option>
+        <option value="edart"> DGO (External to CRM)</option>
+    </select>
+    <br><br>
+
+    <b>Type of Request:</b>&emsp;
+    <select class="dropdown">
+        <option value="" disabled selected>Select</option>
+        <option value="consultation"> Consultation </option>
+        <option value="modeling"> Data Modeling </option>
+        <option value="profiling"> Data Profiling </option>
+        <option value="tiering"> Data Tiering </option>
+        <option value="lineage"> Lineage </option>
+        <option value="businessmeta"> Business Metadata </option>
+        <option value="techmeta"> Technical Metadata </option>
+        <option value="dq"> Data Quality </option>
+        <option value="change"> Update / Change </option>
+        <option value="other"> Other </option>
+    </select>&emsp;
+    Other: <input type="text" name="request-type-other"> &nbsp; <i>(Enter brief description)</i>
+    <br><br>
+    
+    <b>Is Regulatory:</b>&nbsp;
+    <input type="radio" name="regulatory" value="Yes">Yes
+    <input type="radio" name="regulatory" value="No">No
+    <input type="radio" name="regulatory" value="Unsure">Unsure
+    <br><br>
+
+    <hr>
+
+    <b>For New Metrics:</b><br>
+    Metric Name: &emsp;&emsp;&emsp;&nbsp;&nbsp; <input type = "text" name="new_metric_name" size="40" /><br>
+    Metric Description: &emsp; <input type = "text" name="new_metric_desc" size="40" /><br>
+    Metric Category: &emsp;&emsp;&nbsp; 
+    <input type="radio" name="metric_type" value="RAMM">RAMM
+    <input type="radio" name="metric_type" value="KRAM">KRAM
+    <input type="radio" name="metric_type" value="KRI">KRI
+    <input type="radio" name="metric_type" value="KPI">KPI<br>
+    Metric Calculation: &emsp; <input type = "text" name="new_metric_calc" size="40" /><br>
+    <!-- Risk Threshold: <input type = "text" name="new_metric_desc" size="40" /><br> -->
+    Source of Records: &emsp; <input type = "text" name="source_record" size="40" /><br>
+    Data Source 1: &emsp;&emsp; <input type = "text" name="data_source_1" size="40" /><br>
+    Source Owner 1: &emsp;&nbsp; <input type = "text" name="source_owner_1" size="40" /><br>
+    Data Source 2: &emsp;&emsp; <input type = "text" name="data_source_2" size="40" /><br>
+    Source Owner 2: &emsp;&nbsp;  <input type = "text" name="source_owner_2" size="40" /><br>
+    If applicable:
+
+    <br><br>
+
+
+    <input type="submit" value="Submit">
+    </fieldset>    
+    </form>
+</body>
+</html>
